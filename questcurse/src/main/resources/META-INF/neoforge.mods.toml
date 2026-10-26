@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="questcurse"
+version="1.0.0"
+displayName="Quest & Curse"
+description='Каждые X минут — задание. Выполнил: шанс 80% на благословение. Провалил: потеря "органа" или спавн мобов. Снять проклятие можно временем или алмазами.'
+
+[[dependencies.questcurse]]
+modId="neoforge"
+type="required"
+versionRange="[21.11,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.questcurse]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.11,1.22)"
+ordering="NONE"
+side="BOTH"
