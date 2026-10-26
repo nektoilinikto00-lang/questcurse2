@@ -17,13 +17,15 @@ jobs:
         distribution: 'temurin'
 
     - name: Grant execute permission for gradlew
+      working-directory: questcurse
       run: chmod +x gradlew
 
     - name: Build with Gradle
+      working-directory: questcurse
       run: ./gradlew build
 
     - name: Upload JAR artifact
       uses: actions/upload-artifact@v4
       with:
         name: questcurse-mod-jar
-        path: build/libs/*.jar
+        path: questcurse/build/libs/*.jar
